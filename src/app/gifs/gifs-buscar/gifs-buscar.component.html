@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col-md-10 col-sm-4">
+    <input class="input" #valor type="text" (keyup.enter)="buscar(valor.value)" placeholder="Buscar gifs...">
+  </div>
+  <div class="col-md-1">
+    <button class="button" mat-raised-button color="primary" (click)="buscar(valor.value)">Buscar</button>
+  </div>
+</div>

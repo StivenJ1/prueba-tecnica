@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-md-4 col-sm-6" *ngFor="let resultado of Resultados">
+      <mat-card class="card">
+        <mat-card-content>
+          <img class="card-img-top" [src]="resultado.images.downsized_medium.url" [alt]="resultado.title">
+        </mat-card-content>
+      </mat-card>
+  </div>
+</div>

@@ -17,7 +17,7 @@ export class ServiciosGifsService {
 
   constructor(private http :HttpClient) { }
 
-   buscarGifs(query: string=''){
+   buscarGifs(query: string){
     const params = new HttpParams().set('api_key',API_KEY).set('q',query).set('limit',15);
     this.http.get<BuscarGifs>(`${URL}`, {params}).subscribe
     (response => {
